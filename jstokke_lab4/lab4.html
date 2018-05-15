@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab4</title>
+	<script src="lab4.js" type="text/javascript"></script>
+</head>
+<body>
+	<p><script type="text/javascript">printRooms()</script><br> 
+	<script type="text/javascript">printSuspects()</script><br>
+	<script type="text/javascript">printWeapons()</script></p>
+	<p id="one">
+		<form id="getName" action="#">
+			Name:<input type="text" id="name" name="name" />
+			<button onclick="shuffle(getName.name.value)">Enter</button>
+		</form>
+	</p>
+	<p id="two"></p>
+	<p id="three">
+		<form id="guess" action="#">
+			<select id="selectRoom">
+				<option>Choose a Room</option>
+			</select>
+			<select id="selectSuspect">
+				<option>Choose a Suspect</option>
+			</select>
+			<select id="selectWeapon">
+				<option>Choose a Weapon</option>
+			</select>
+			<button onclick="playGame(guess.selectRoom.value, guess.selectSuspect.value, guess.selectWeapon.value)">Guess</button>
+		</form>
+	</p>
+	<p id="four">
+	</p>
+	<p id="five">
+		<button onclick="showMoves()">Show Moves</button>
+	</p>
+	<p id="six">
+	</p>
+	<p id="seven">
+	</p>
+	<p id="eight">
+		<button onclick="showScore()">Show Score</button>
+	</p>
+	<p id="nine">
+	</p>
+	<p id="ten">
+	</p>
+	<p id="eleven">
+		<button onclick="clearLocalStorage()">Clear Scores</button>
+	</p>
+</body> 
